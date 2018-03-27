@@ -18,6 +18,18 @@
 		E1B844C22069FF64007D4F1B /* BaseAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B844C12069FF64007D4F1B /* BaseAnimationViewController.m */; };
 		E1B844C5206A04ED007D4F1B /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B844C4206A04ED007D4F1B /* BaseViewController.m */; };
 		E1B844C8206A0DCC007D4F1B /* KeyFrameAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B844C7206A0DCC007D4F1B /* KeyFrameAnimationViewController.m */; };
+		E1B844CB206A230B007D4F1B /* GroupAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B844CA206A230B007D4F1B /* GroupAnimationViewController.m */; };
+		E1B844CE206A2B45007D4F1B /* TransitionAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B844CD206A2B45007D4F1B /* TransitionAnimationViewController.m */; };
+		E1B844DE206A34A6007D4F1B /* DCPathButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B844D1206A34A6007D4F1B /* DCPathButton.m */; };
+		E1B844DF206A34A6007D4F1B /* DCPathCenterButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B844D3206A34A6007D4F1B /* DCPathCenterButton.m */; };
+		E1B844E0206A34A6007D4F1B /* DCPathItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B844D5206A34A6007D4F1B /* DCPathItemButton.m */; };
+		E1B844E1206A34A6007D4F1B /* DWBubbleMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B844D8206A34A6007D4F1B /* DWBubbleMenuButton.m */; };
+		E1B844E2206A34A6007D4F1B /* MCFireworksButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B844DB206A34A6007D4F1B /* MCFireworksButton.m */; };
+		E1B844E3206A34A6007D4F1B /* MCFireworksView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B844DD206A34A6007D4F1B /* MCFireworksView.m */; };
+		E1B844E9206A3711007D4F1B /* CombinationAniViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B844E8206A3711007D4F1B /* CombinationAniViewController.m */; };
+		E1B844EE206A3AB9007D4F1B /* bloom.caf in Resources */ = {isa = PBXBuildFile; fileRef = E1B844EB206A3AB9007D4F1B /* bloom.caf */; };
+		E1B844EF206A3AB9007D4F1B /* fold.caf in Resources */ = {isa = PBXBuildFile; fileRef = E1B844EC206A3AB9007D4F1B /* fold.caf */; };
+		E1B844F0206A3AB9007D4F1B /* selected.caf in Resources */ = {isa = PBXBuildFile; fileRef = E1B844ED206A3AB9007D4F1B /* selected.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +72,27 @@
 		E1B844C4206A04ED007D4F1B /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		E1B844C6206A0DCC007D4F1B /* KeyFrameAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyFrameAnimationViewController.h; sourceTree = "<group>"; };
 		E1B844C7206A0DCC007D4F1B /* KeyFrameAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyFrameAnimationViewController.m; sourceTree = "<group>"; };
+		E1B844C9206A230B007D4F1B /* GroupAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroupAnimationViewController.h; sourceTree = "<group>"; };
+		E1B844CA206A230B007D4F1B /* GroupAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroupAnimationViewController.m; sourceTree = "<group>"; };
+		E1B844CC206A2B45007D4F1B /* TransitionAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransitionAnimationViewController.h; sourceTree = "<group>"; };
+		E1B844CD206A2B45007D4F1B /* TransitionAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimationViewController.m; sourceTree = "<group>"; };
+		E1B844D0206A34A6007D4F1B /* DCPathButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPathButton.h; sourceTree = "<group>"; };
+		E1B844D1206A34A6007D4F1B /* DCPathButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPathButton.m; sourceTree = "<group>"; };
+		E1B844D2206A34A6007D4F1B /* DCPathCenterButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPathCenterButton.h; sourceTree = "<group>"; };
+		E1B844D3206A34A6007D4F1B /* DCPathCenterButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPathCenterButton.m; sourceTree = "<group>"; };
+		E1B844D4206A34A6007D4F1B /* DCPathItemButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPathItemButton.h; sourceTree = "<group>"; };
+		E1B844D5206A34A6007D4F1B /* DCPathItemButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPathItemButton.m; sourceTree = "<group>"; };
+		E1B844D7206A34A6007D4F1B /* DWBubbleMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWBubbleMenuButton.h; sourceTree = "<group>"; };
+		E1B844D8206A34A6007D4F1B /* DWBubbleMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWBubbleMenuButton.m; sourceTree = "<group>"; };
+		E1B844DA206A34A6007D4F1B /* MCFireworksButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFireworksButton.h; sourceTree = "<group>"; };
+		E1B844DB206A34A6007D4F1B /* MCFireworksButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFireworksButton.m; sourceTree = "<group>"; };
+		E1B844DC206A34A6007D4F1B /* MCFireworksView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFireworksView.h; sourceTree = "<group>"; };
+		E1B844DD206A34A6007D4F1B /* MCFireworksView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFireworksView.m; sourceTree = "<group>"; };
+		E1B844E7206A3711007D4F1B /* CombinationAniViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CombinationAniViewController.h; sourceTree = "<group>"; };
+		E1B844E8206A3711007D4F1B /* CombinationAniViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CombinationAniViewController.m; sourceTree = "<group>"; };
+		E1B844EB206A3AB9007D4F1B /* bloom.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bloom.caf; sourceTree = "<group>"; };
+		E1B844EC206A3AB9007D4F1B /* fold.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = fold.caf; sourceTree = "<group>"; };
+		E1B844ED206A3AB9007D4F1B /* selected.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = selected.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +143,10 @@
 		E1B8448C2069EC3A007D4F1B /* BabyPigAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				E1B844EA206A3AB9007D4F1B /* Sounds */,
+				E1B844CF206A34A6007D4F1B /* DCPathButton */,
+				E1B844D6206A34A6007D4F1B /* DWBubbleMenuButton */,
+				E1B844D9206A34A6007D4F1B /* MCFireworksButton */,
 				E1B844BF2069FF41007D4F1B /* GJAnimationViewControllers */,
 				E1B8448D2069EC3A007D4F1B /* AppDelegate.h */,
 				E1B8448E2069EC3A007D4F1B /* AppDelegate.m */,
@@ -151,8 +188,57 @@
 				E1B844C12069FF64007D4F1B /* BaseAnimationViewController.m */,
 				E1B844C6206A0DCC007D4F1B /* KeyFrameAnimationViewController.h */,
 				E1B844C7206A0DCC007D4F1B /* KeyFrameAnimationViewController.m */,
+				E1B844C9206A230B007D4F1B /* GroupAnimationViewController.h */,
+				E1B844CA206A230B007D4F1B /* GroupAnimationViewController.m */,
+				E1B844CC206A2B45007D4F1B /* TransitionAnimationViewController.h */,
+				E1B844CD206A2B45007D4F1B /* TransitionAnimationViewController.m */,
+				E1B844E7206A3711007D4F1B /* CombinationAniViewController.h */,
+				E1B844E8206A3711007D4F1B /* CombinationAniViewController.m */,
 			);
 			path = GJAnimationViewControllers;
+			sourceTree = "<group>";
+		};
+		E1B844CF206A34A6007D4F1B /* DCPathButton */ = {
+			isa = PBXGroup;
+			children = (
+				E1B844D0206A34A6007D4F1B /* DCPathButton.h */,
+				E1B844D1206A34A6007D4F1B /* DCPathButton.m */,
+				E1B844D2206A34A6007D4F1B /* DCPathCenterButton.h */,
+				E1B844D3206A34A6007D4F1B /* DCPathCenterButton.m */,
+				E1B844D4206A34A6007D4F1B /* DCPathItemButton.h */,
+				E1B844D5206A34A6007D4F1B /* DCPathItemButton.m */,
+			);
+			path = DCPathButton;
+			sourceTree = "<group>";
+		};
+		E1B844D6206A34A6007D4F1B /* DWBubbleMenuButton */ = {
+			isa = PBXGroup;
+			children = (
+				E1B844D7206A34A6007D4F1B /* DWBubbleMenuButton.h */,
+				E1B844D8206A34A6007D4F1B /* DWBubbleMenuButton.m */,
+			);
+			path = DWBubbleMenuButton;
+			sourceTree = "<group>";
+		};
+		E1B844D9206A34A6007D4F1B /* MCFireworksButton */ = {
+			isa = PBXGroup;
+			children = (
+				E1B844DA206A34A6007D4F1B /* MCFireworksButton.h */,
+				E1B844DB206A34A6007D4F1B /* MCFireworksButton.m */,
+				E1B844DC206A34A6007D4F1B /* MCFireworksView.h */,
+				E1B844DD206A34A6007D4F1B /* MCFireworksView.m */,
+			);
+			path = MCFireworksButton;
+			sourceTree = "<group>";
+		};
+		E1B844EA206A3AB9007D4F1B /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				E1B844EB206A3AB9007D4F1B /* bloom.caf */,
+				E1B844EC206A3AB9007D4F1B /* fold.caf */,
+				E1B844ED206A3AB9007D4F1B /* selected.caf */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +348,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1B8449A2069EC3A007D4F1B /* LaunchScreen.storyboard in Resources */,
+				E1B844F0206A3AB9007D4F1B /* selected.caf in Resources */,
 				E1B844972069EC3A007D4F1B /* Assets.xcassets in Resources */,
+				E1B844EE206A3AB9007D4F1B /* bloom.caf in Resources */,
+				E1B844EF206A3AB9007D4F1B /* fold.caf in Resources */,
 				E1B844952069EC3A007D4F1B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,11 +377,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1B844E0206A34A6007D4F1B /* DCPathItemButton.m in Sources */,
+				E1B844DE206A34A6007D4F1B /* DCPathButton.m in Sources */,
+				E1B844CE206A2B45007D4F1B /* TransitionAnimationViewController.m in Sources */,
+				E1B844E9206A3711007D4F1B /* CombinationAniViewController.m in Sources */,
+				E1B844E3206A34A6007D4F1B /* MCFireworksView.m in Sources */,
+				E1B844DF206A34A6007D4F1B /* DCPathCenterButton.m in Sources */,
 				E1B844922069EC3A007D4F1B /* ViewController.m in Sources */,
+				E1B844CB206A230B007D4F1B /* GroupAnimationViewController.m in Sources */,
 				E1B844C5206A04ED007D4F1B /* BaseViewController.m in Sources */,
+				E1B844E1206A34A6007D4F1B /* DWBubbleMenuButton.m in Sources */,
 				E1B8449D2069EC3A007D4F1B /* main.m in Sources */,
 				E1B844C8206A0DCC007D4F1B /* KeyFrameAnimationViewController.m in Sources */,
 				E1B844C22069FF64007D4F1B /* BaseAnimationViewController.m in Sources */,
+				E1B844E2206A34A6007D4F1B /* MCFireworksButton.m in Sources */,
 				E1B8448F2069EC3A007D4F1B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

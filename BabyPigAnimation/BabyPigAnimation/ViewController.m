@@ -11,6 +11,9 @@
 #import "ViewController.h"
 #import "BaseAnimationViewController.h"
 #import "KeyFrameAnimationViewController.h"
+#import "GroupAnimationViewController.h"
+#import "TransitionAnimationViewController.h"
+#import "CombinationAniViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -108,6 +111,15 @@
         [self.navigationController pushViewController:vc animated:YES];
     }else if (indexPath.section == 1){
         KeyFrameAnimationViewController *vc = [[KeyFrameAnimationViewController alloc] initWithType:indexPath.row];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.section == 2){
+        GroupAnimationViewController *vc = [[GroupAnimationViewController alloc] initWithType:indexPath.row];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.section == 3){
+        TransitionAnimationViewController *vc = [[TransitionAnimationViewController alloc] initWithType:indexPath.row];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.section == 4){
+        CombinationAniViewController *vc = [[CombinationAniViewController alloc] initWithType:indexPath.row];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

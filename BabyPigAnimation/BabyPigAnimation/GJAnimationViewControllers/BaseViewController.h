@@ -27,6 +27,26 @@ typedef NS_ENUM(NSInteger, KeyAniType){
     shake
 };
 
+typedef NS_ENUM(NSInteger, GroupAniType){
+    sameTime = 0,
+    goOn
+};
+
+typedef NS_ENUM(NSInteger, TransitionAniType){
+    fade = 0,
+    moveIn,
+    push,
+    reveal,
+    cube,
+    suck,
+    oglFile,
+    ripple,
+    curl,
+    unCurl,
+    caOpen,
+    caClose
+};
+
 @interface BaseViewController : UIViewController
 
 @property(nonatomic,strong)UIView *babyView;
