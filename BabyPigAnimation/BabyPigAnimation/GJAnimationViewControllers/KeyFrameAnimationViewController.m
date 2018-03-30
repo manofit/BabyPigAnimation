@@ -11,7 +11,7 @@
 #import "KeyFrameAnimationViewController.h"
 
 @interface KeyFrameAnimationViewController ()
-
+@property(nonatomic,assign)KeyAniType aniType;
 @end
 
 @implementation KeyFrameAnimationViewController

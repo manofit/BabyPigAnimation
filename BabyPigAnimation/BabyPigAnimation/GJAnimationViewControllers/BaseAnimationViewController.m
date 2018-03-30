@@ -11,7 +11,7 @@
 #import "BaseAnimationViewController.h"
 
 @interface BaseAnimationViewController ()
-
+@property(nonatomic,assign)BaseAniType aniType;
 @end
 
 @implementation BaseAnimationViewController

@@ -13,6 +13,7 @@
 @interface TransitionAnimationViewController ()
 @property(nonatomic,strong)UILabel *numLabel;
 @property(nonatomic,assign)NSInteger index;
+@property(nonatomic,assign)TransitionAniType aniType;
 @end
 
 @implementation TransitionAnimationViewController

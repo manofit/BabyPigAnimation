@@ -12,8 +12,6 @@
 
 @interface GroupAnimationViewController : BaseViewController
 
-@property(nonatomic,assign)GroupAniType aniType;
-
 -(instancetype)initWithType:(GroupAniType)type;
 
 @end

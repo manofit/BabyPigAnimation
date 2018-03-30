@@ -11,7 +11,7 @@
 #import "GroupAnimationViewController.h"
 
 @interface GroupAnimationViewController ()
-
+@property(nonatomic,assign)GroupAniType aniType;
 @end
 
 @implementation GroupAnimationViewController

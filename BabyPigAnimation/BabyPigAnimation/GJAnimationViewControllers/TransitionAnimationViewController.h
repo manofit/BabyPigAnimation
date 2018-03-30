@@ -12,8 +12,6 @@
 
 @interface TransitionAnimationViewController : BaseViewController
 
-@property(nonatomic,assign)TransitionAniType aniType;
-
 -(instancetype)initWithType:(TransitionAniType)type;
 
 @end

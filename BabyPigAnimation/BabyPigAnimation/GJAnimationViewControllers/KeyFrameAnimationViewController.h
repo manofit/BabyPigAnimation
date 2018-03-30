@@ -13,8 +13,6 @@
 
 @interface KeyFrameAnimationViewController : BaseViewController
 
-@property(nonatomic,assign)KeyAniType aniType;
-
 -(instancetype)initWithType:(KeyAniType)type;
 
 @end

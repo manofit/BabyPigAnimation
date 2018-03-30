@@ -22,8 +22,6 @@ typedef NS_ENUM(NSInteger, CombinationAniType){
 
 @interface CombinationAniViewController : UIViewController
 
-@property(nonatomic,assign)CombinationAniType aniType;
-
 -(instancetype)initWithType:(CombinationAniType)type;
 
 @end

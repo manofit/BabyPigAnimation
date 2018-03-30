@@ -13,8 +13,6 @@
 
 @interface BaseAnimationViewController : BaseViewController
 
-@property(nonatomic,assign)BaseAniType aniType;
-
 -(instancetype)initWithType:(BaseAniType)type;
 
 @end

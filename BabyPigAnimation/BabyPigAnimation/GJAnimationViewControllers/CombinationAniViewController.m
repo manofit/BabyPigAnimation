@@ -14,7 +14,7 @@
 #import "MCFireworksButton.h"
 
 @interface CombinationAniViewController ()<DCPathButtonDelegate>
-
+@property(nonatomic,assign)CombinationAniType aniType;
 @end
 
 @implementation CombinationAniViewController
