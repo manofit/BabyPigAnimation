@@ -2,7 +2,7 @@
 
 从简单的基础动画到复杂的组动画，原理一目了然。最后再加上几个常见动画，举一反三。
 ### 效果图
-![gif_1](https://github.com/manofit/BabyPigAnimation/blob/master/gif_1.gif)![gif_2](https://github.com/manofit/BabyPigAnimation/blob/master/gif_2.gif)![gif_3](https://github.com/manofit/BabyPigAnimation/blob/master/gif_3.gif)
+![gif_1](https://github.com/manofit/BabyPigAnimation/blob/master/gif_1.gif)![gif_2](https://github.com/manofit/BabyPigAnimation/blob/master/gif_2.gif)![gif_3](https://github.com/manofit/BabyPigAnimation/blob/master/gif_3.gif)![bezier](https://github.com/manofit/BabyPigAnimation/blob/master/bezier.gif)
 
 
 ### 使用
