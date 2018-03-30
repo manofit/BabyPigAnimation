@@ -16,7 +16,8 @@
 typedef NS_ENUM(NSInteger, CombinationAniType){
     aPath = 0,
     dingding,
-    dianzan
+    dianzan,
+    bezier,
 };
 
 @interface CombinationAniViewController : UIViewController

@@ -32,7 +32,7 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    NSArray *array_5 = [NSArray arrayWithObjects:@"path",@"钉钉",@"点赞", nil];
+    NSArray *array_5 = [NSArray arrayWithObjects:@"path",@"钉钉",@"点赞",@"贝塞尔曲线", nil];
     self.navigationItem.title = array_5[self.aniType];
     
     [self loadAnimationWithType:self.aniType];
@@ -48,6 +48,9 @@
             break;
         case 2:
             [self makeDianzanAnimation];
+            break;
+        case 3:
+            [self makeBezierPathAnimation];
             break;
         default:
             break;
@@ -182,6 +185,55 @@
         [btn popInsideWithDuration:0.4];
         [btn setImage:[UIImage imageNamed:@"Like"] forState:UIControlStateNormal];
     }
+}
+
+//===================================================================================================================
+- (void)makeBezierPathAnimation{
+    UIView *smallView = [[UIView alloc] initWithFrame:CGRectMake(20, 200, 8, 8)];
+    smallView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:smallView];
+    
+    
+    UIBezierPath *path = [UIBezierPath bezierPath];
+    // 首先设置一个起始点
+    CGPoint startPoint = CGPointMake(self.view.frame.size.width/2, 120);
+    // 以起始点为路径的起点
+    [path moveToPoint:CGPointMake(self.view.frame.size.width/2, 120)];
+    // 设置一个终点
+    CGPoint endPoint = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height-400);
+    // 设置第一个控制点
+    CGPoint controlPoint1 = CGPointMake(100, 20);
+    // 设置第二个控制点
+    CGPoint controlPoint2 = CGPointMake(0, 180);
+    // 添加二次贝塞尔曲线
+    [path addCurveToPoint:endPoint controlPoint1:controlPoint1 controlPoint2:controlPoint2];
+    // 设置另一个起始点
+    [path moveToPoint:endPoint];
+    // 设置第三个控制点
+    CGPoint controlPoint3 = CGPointMake(self.view.frame.size.width, 180);
+    // 设置第四个控制点
+    CGPoint controlPoint4 = CGPointMake(self.view.frame.size.width-100, 20);
+    // 添加二次贝塞尔曲线
+    [path addCurveToPoint:startPoint controlPoint1:controlPoint3 controlPoint2:controlPoint4];
+    // 设置线断面类型
+    path.lineCapStyle = kCGLineCapRound;
+    // 设置连接类型
+    path.lineJoinStyle = kCGLineJoinRound;
+    
+    CAShapeLayer *shaLayer = [CAShapeLayer layer];
+    shaLayer.path = path.CGPath;
+    shaLayer.lineWidth = 2;
+    shaLayer.strokeColor = [UIColor blackColor].CGColor;
+    shaLayer.fillColor = [UIColor clearColor].CGColor;
+    [self.view.layer addSublayer:shaLayer];
+    
+    
+    CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+    animation.repeatCount = NSIntegerMax;
+    animation.path = path.CGPath;
+    animation.duration = 6;
+    [smallView.layer addAnimation:animation forKey:@"positionAnimation"];
+    
 }
 
 @end

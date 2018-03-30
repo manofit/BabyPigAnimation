@@ -59,7 +59,7 @@
     NSMutableDictionary *dic_4 = [NSMutableDictionary dictionaryWithObject:array_4 forKey:@"value"];
     [dic_4 setValue:@"过渡动画" forKey:@"title"];
     
-    NSArray *array_5 = [NSArray arrayWithObjects:@"path",@"钉钉",@"点赞", nil];
+    NSArray *array_5 = [NSArray arrayWithObjects:@"path",@"钉钉",@"点赞",@"贝塞尔曲线", nil];
     NSMutableDictionary *dic_5 = [NSMutableDictionary dictionaryWithObject:array_5 forKey:@"value"];
     [dic_5 setValue:@"组合案例" forKey:@"title"];
     
