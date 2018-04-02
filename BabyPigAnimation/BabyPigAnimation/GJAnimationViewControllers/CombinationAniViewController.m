@@ -189,11 +189,7 @@
 
 //===================================================================================================================
 - (void)makeBezierPathAnimation{
-    UIView *smallView = [[UIView alloc] initWithFrame:CGRectMake(20, 200, 8, 8)];
-    smallView.backgroundColor = [UIColor redColor];
-    [self.view addSubview:smallView];
-    
-    
+
     UIBezierPath *path = [UIBezierPath bezierPath];
     // 首先设置一个起始点
     CGPoint startPoint = CGPointMake(self.view.frame.size.width/2, 120);
@@ -220,19 +216,23 @@
     // 设置连接类型
     path.lineJoinStyle = kCGLineJoinRound;
     
-    CAShapeLayer *shaLayer = [CAShapeLayer layer];
-    shaLayer.path = path.CGPath;
-    shaLayer.lineWidth = 2;
-    shaLayer.strokeColor = [UIColor blackColor].CGColor;
-    shaLayer.fillColor = [UIColor clearColor].CGColor;
-    [self.view.layer addSublayer:shaLayer];
+    CAShapeLayer *animLayer = [CAShapeLayer layer];
+    animLayer.path = path.CGPath;
+    animLayer.lineWidth = 2.f;
+    animLayer.strokeColor = [UIColor blackColor].CGColor;
+    animLayer.fillColor = [UIColor clearColor].CGColor;
+    animLayer.strokeStart = 0;
+    animLayer.strokeEnd = 1.;
+    [self.view.layer addSublayer:animLayer];
     
     
-    CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
-    animation.repeatCount = NSIntegerMax;
-    animation.path = path.CGPath;
-    animation.duration = 6;
-    [smallView.layer addAnimation:animation forKey:@"positionAnimation"];
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+    animation.fromValue = @(0);
+    animation.toValue = @(1.f);
+    animation.duration = 2.0f;
+    animation.removedOnCompletion = NO;
+    animation.fillMode  = kCAFillModeForwards;
+    [animLayer addAnimation:animation forKey:@"strokeEnd"];
     
 }
 
