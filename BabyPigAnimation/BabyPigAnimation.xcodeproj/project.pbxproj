@@ -30,6 +30,7 @@
 		E1B844EE206A3AB9007D4F1B /* bloom.caf in Resources */ = {isa = PBXBuildFile; fileRef = E1B844EB206A3AB9007D4F1B /* bloom.caf */; };
 		E1B844EF206A3AB9007D4F1B /* fold.caf in Resources */ = {isa = PBXBuildFile; fileRef = E1B844EC206A3AB9007D4F1B /* fold.caf */; };
 		E1B844F0206A3AB9007D4F1B /* selected.caf in Resources */ = {isa = PBXBuildFile; fileRef = E1B844ED206A3AB9007D4F1B /* selected.caf */; };
+		E1FDCEA32071F46D006B0CB1 /* GJProgressAniView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1FDCEA22071F46D006B0CB1 /* GJProgressAniView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,8 @@
 		E1B844EB206A3AB9007D4F1B /* bloom.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bloom.caf; sourceTree = "<group>"; };
 		E1B844EC206A3AB9007D4F1B /* fold.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = fold.caf; sourceTree = "<group>"; };
 		E1B844ED206A3AB9007D4F1B /* selected.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = selected.caf; sourceTree = "<group>"; };
+		E1FDCEA12071F46D006B0CB1 /* GJProgressAniView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GJProgressAniView.h; sourceTree = "<group>"; };
+		E1FDCEA22071F46D006B0CB1 /* GJProgressAniView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GJProgressAniView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +146,7 @@
 		E1B8448C2069EC3A007D4F1B /* BabyPigAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				E1FDCEA02071F41D006B0CB1 /* ProgressView */,
 				E1B844EA206A3AB9007D4F1B /* Sounds */,
 				E1B844CF206A34A6007D4F1B /* DCPathButton */,
 				E1B844D6206A34A6007D4F1B /* DWBubbleMenuButton */,
@@ -239,6 +243,15 @@
 				E1B844ED206A3AB9007D4F1B /* selected.caf */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		E1FDCEA02071F41D006B0CB1 /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				E1FDCEA12071F46D006B0CB1 /* GJProgressAniView.h */,
+				E1FDCEA22071F46D006B0CB1 /* GJProgressAniView.m */,
+			);
+			path = ProgressView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,6 +397,7 @@
 				E1B844E3206A34A6007D4F1B /* MCFireworksView.m in Sources */,
 				E1B844DF206A34A6007D4F1B /* DCPathCenterButton.m in Sources */,
 				E1B844922069EC3A007D4F1B /* ViewController.m in Sources */,
+				E1FDCEA32071F46D006B0CB1 /* GJProgressAniView.m in Sources */,
 				E1B844CB206A230B007D4F1B /* GroupAnimationViewController.m in Sources */,
 				E1B844C5206A04ED007D4F1B /* BaseViewController.m in Sources */,
 				E1B844E1206A34A6007D4F1B /* DWBubbleMenuButton.m in Sources */,

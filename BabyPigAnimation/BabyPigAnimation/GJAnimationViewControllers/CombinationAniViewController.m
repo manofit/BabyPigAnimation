@@ -12,6 +12,7 @@
 #import "DCPathButton.h"
 #import "DWBubbleMenuButton.h"
 #import "MCFireworksButton.h"
+#import "GJProgressAniView.h"
 
 @interface CombinationAniViewController ()<DCPathButtonDelegate>
 @property(nonatomic,assign)CombinationAniType aniType;
@@ -32,7 +33,7 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    NSArray *array_5 = [NSArray arrayWithObjects:@"path",@"钉钉",@"点赞",@"贝塞尔曲线", nil];
+    NSArray *array_5 = [NSArray arrayWithObjects:@"path",@"钉钉",@"点赞",@"贝塞尔曲线",@"进度", nil];
     self.navigationItem.title = array_5[self.aniType];
     
     [self loadAnimationWithType:self.aniType];
@@ -51,6 +52,9 @@
             break;
         case 3:
             [self makeBezierPathAnimation];
+            break;
+        case 4:
+            [self makeProgressAnimation];
             break;
         default:
             break;
@@ -234,6 +238,19 @@
     animation.fillMode  = kCAFillModeForwards;
     [animLayer addAnimation:animation forKey:@"strokeEnd"];
     
+}
+
+//===================================================================================================================
+- (void)makeProgressAnimation{
+    UIView *backView = [[UIView alloc] initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, 300)];
+    backView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:backView];
+    
+    GJProgressAniView *proView = [[GJProgressAniView alloc] initWithFrame:CGRectMake((backView.frame.size.width-115)/2, (300-115)/2, 115, 115)];
+    proView.mainPathWidth = 17;
+    [backView addSubview:proView];
+    
+    [proView drawCircleWithProgress:70];
 }
 
 @end
